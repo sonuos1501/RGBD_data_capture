@@ -108,7 +108,6 @@
 				5AAE52DC0BF2B2CE2B8E2993 /* Pods-TrueDepthStreamer.debug.xcconfig */,
 				FFA3E0578FD00CA332FED9E2 /* Pods-TrueDepthStreamer.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,7 +227,7 @@
 				TargetAttributes = {
 					E422DFB61CEF894F0047D7A4 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = R24TLJ3YBG;
+						DevelopmentTeam = 26C6S25G2U;
 						LastSwiftMigration = 1100;
 						ProvisioningStyle = Automatic;
 					};
@@ -462,7 +461,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R24TLJ3YBG;
+				DEVELOPMENT_TEAM = 26C6S25G2U;
 				INFOPLIST_FILE = TrueDepthStreamer/Info.plist;
 				INSTALL_PATH = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -488,7 +487,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R24TLJ3YBG;
+				DEVELOPMENT_TEAM = 26C6S25G2U;
 				INFOPLIST_FILE = TrueDepthStreamer/Info.plist;
 				INSTALL_PATH = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
