@@ -13,6 +13,7 @@
 		261FA1F91E94641700BE8D47 /* Mixer.metal in Sources */ = {isa = PBXBuildFile; fileRef = 261FA1F81E94641700BE8D47 /* Mixer.metal */; };
 		2633CF1D1E7C65D500FC80E1 /* DepthToJETConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2633CF1C1E7C65D500FC80E1 /* DepthToJETConverter.swift */; };
 		2672370E1E79BFC0003D2EAA /* DepthToJET.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2672370D1E79BFBF003D2EAA /* DepthToJET.metal */; };
+		4041B2AE839314358CD205F2 /* Pods_TrueDepthStreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF367990F9CF14D55D2B43F /* Pods_TrueDepthStreamer.framework */; };
 		6D20BC101FFE665100496684 /* PointCloudMetalView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6D20BC0F1FFE665100496684 /* PointCloudMetalView.mm */; };
 		C1C4CF5C2536AD10000F015C /* kuang.png in Resources */ = {isa = PBXBuildFile; fileRef = C1C4CF5B2536AD10000F015C /* kuang.png */; };
 		C3444A7D1FFE6110002D901D /* AAPLTransforms.mm in Sources */ = {isa = PBXBuildFile; fileRef = C3444A741FFE6110002D901D /* AAPLTransforms.mm */; };
@@ -37,7 +38,9 @@
 		2633CF1C1E7C65D500FC80E1 /* DepthToJETConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepthToJETConverter.swift; sourceTree = "<group>"; };
 		2672370D1E79BFBF003D2EAA /* DepthToJET.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = DepthToJET.metal; sourceTree = "<group>"; };
 		267ED84D1ED7965A00898078 /* TrueDepthStreamer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrueDepthStreamer-Bridging-Header.h"; sourceTree = "<group>"; };
+		5AAE52DC0BF2B2CE2B8E2993 /* Pods-TrueDepthStreamer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrueDepthStreamer.debug.xcconfig"; path = "Target Support Files/Pods-TrueDepthStreamer/Pods-TrueDepthStreamer.debug.xcconfig"; sourceTree = "<group>"; };
 		6D20BC0F1FFE665100496684 /* PointCloudMetalView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PointCloudMetalView.mm; sourceTree = "<group>"; };
+		9DF367990F9CF14D55D2B43F /* Pods_TrueDepthStreamer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrueDepthStreamer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C4CF5B2536AD10000F015C /* kuang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kuang.png; sourceTree = "<group>"; };
 		C3444A731FFE6110002D901D /* PointCloudMetalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointCloudMetalView.h; sourceTree = "<group>"; };
 		C3444A741FFE6110002D901D /* AAPLTransforms.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AAPLTransforms.mm; sourceTree = "<group>"; };
@@ -58,6 +61,7 @@
 		E46129031CF4C0B8004FE176 /* PreviewMetalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewMetalView.swift; sourceTree = "<group>"; };
 		E4A8A1411CF6188A006823AB /* PassThrough.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = PassThrough.metal; sourceTree = "<group>"; };
 		E4E160DA1D00979000C83A5A /* FilterRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterRenderer.swift; sourceTree = "<group>"; };
+		FFA3E0578FD00CA332FED9E2 /* Pods-TrueDepthStreamer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrueDepthStreamer.release.xcconfig"; path = "Target Support Files/Pods-TrueDepthStreamer/Pods-TrueDepthStreamer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +69,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4041B2AE839314358CD205F2 /* Pods_TrueDepthStreamer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22ADED334A2A0DDEDD1726C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DF367990F9CF14D55D2B43F /* Pods_TrueDepthStreamer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2672370F1E79BFD1003D2EAA /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +100,16 @@
 			children = (
 			);
 			name = Configuration;
+			sourceTree = "<group>";
+		};
+		A6803572772C8F745BBE2378 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AAE52DC0BF2B2CE2B8E2993 /* Pods-TrueDepthStreamer.debug.xcconfig */,
+				FFA3E0578FD00CA332FED9E2 /* Pods-TrueDepthStreamer.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		C1C4CF5A2536ACDD000F015C /* Assets */ = {
@@ -136,6 +159,8 @@
 				8F7DEDF83CEB2358D1CCC092 /* Configuration */,
 				CCE52550CCE525B000000001 /* Configuration */,
 				CCCD8E90CCCD7B8000000001 /* LICENSE */,
+				A6803572772C8F745BBE2378 /* Pods */,
+				22ADED334A2A0DDEDD1726C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,6 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E422DFC91CEF894F0047D7A4 /* Build configuration list for PBXNativeTarget "TrueDepthStreamer" */;
 			buildPhases = (
+				38CD7B3B5F939E93E7A76C04 /* [CP] Check Pods Manifest.lock */,
 				E422DFB31CEF894F0047D7A4 /* Sources */,
 				E422DFB41CEF894F0047D7A4 /* Frameworks */,
 				E422DFB51CEF894F0047D7A4 /* Resources */,
@@ -239,6 +265,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38CD7B3B5F939E93E7A76C04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrueDepthStreamer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E422DFB31CEF894F0047D7A4 /* Sources */ = {
