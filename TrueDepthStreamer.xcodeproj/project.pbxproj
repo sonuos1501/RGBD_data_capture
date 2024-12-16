@@ -49,7 +49,6 @@
 		C3B256711FDE655100617DD7 /* HistogramCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistogramCalculator.m; sourceTree = "<group>"; };
 		C3B256721FDE655200617DD7 /* HistogramCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistogramCalculator.h; sourceTree = "<group>"; };
 		CCCD7910CCCD7C9000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		CCE67AC0CCE54C5000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		E414FC6C1D5921FD0007C979 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E422DFB71CEF894F0047D7A4 /* TrueDepthStreamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrueDepthStreamer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E422DFBF1CEF894F0047D7A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -95,13 +94,6 @@
 			path = Shaders;
 			sourceTree = "<group>";
 		};
-		8F7DEDF83CEB2358D1CCC092 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Configuration;
-			sourceTree = "<group>";
-		};
 		A6803572772C8F745BBE2378 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,14 +130,6 @@
 			path = LICENSE;
 			sourceTree = "<group>";
 		};
-		CCE52550CCE525B000000001 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				CCE67AC0CCE54C5000000001 /* SampleCode.xcconfig */,
-			);
-			name = Configuration;
-			sourceTree = "<group>";
-		};
 		E422DFAE1CEF894F0047D7A4 = {
 			isa = PBXGroup;
 			children = (
@@ -155,8 +139,6 @@
 				E414FC6C1D5921FD0007C979 /* README.md */,
 				E422DFB91CEF894F0047D7A4 /* TrueDepthStreamer */,
 				E422DFB81CEF894F0047D7A4 /* Products */,
-				8F7DEDF83CEB2358D1CCC092 /* Configuration */,
-				CCE52550CCE525B000000001 /* Configuration */,
 				CCCD8E90CCCD7B8000000001 /* LICENSE */,
 				A6803572772C8F745BBE2378 /* Pods */,
 				22ADED334A2A0DDEDD1726C3 /* Frameworks */,
@@ -205,6 +187,7 @@
 				E422DFB31CEF894F0047D7A4 /* Sources */,
 				E422DFB41CEF894F0047D7A4 /* Frameworks */,
 				E422DFB51CEF894F0047D7A4 /* Resources */,
+				9073B70D812EA49D6CDF53FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,6 +271,36 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9073B70D812EA49D6CDF53FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrueDepthStreamer/Pods-TrueDepthStreamer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCoreInternal/FirebaseCoreInternal.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseInstallations/FirebaseInstallations.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCoreInternal.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseInstallations.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrueDepthStreamer/Pods-TrueDepthStreamer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -337,7 +350,6 @@
 /* Begin XCBuildConfiguration section */
 		E422DFC71CEF894F0047D7A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CCE67AC0CCE54C5000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPRESSION = lossless;
@@ -399,7 +411,6 @@
 		};
 		E422DFC81CEF894F0047D7A4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CCE67AC0CCE54C5000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPRESSION = "respect-asset-catalog";
@@ -455,7 +466,7 @@
 		};
 		E422DFCA1CEF894F0047D7A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CCE67AC0CCE54C5000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = 5AAE52DC0BF2B2CE2B8E2993 /* Pods-TrueDepthStreamer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -481,7 +492,7 @@
 		};
 		E422DFCB1CEF894F0047D7A4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CCE67AC0CCE54C5000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = FFA3E0578FD00CA332FED9E2 /* Pods-TrueDepthStreamer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
